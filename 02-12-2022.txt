@@ -1,0 +1,67 @@
+--functions--
+select CURRENT_TIMESTAMP
+
+select DATEADD (day,2,'2023/08/23') from Student;
+ 
+select DATEADD (day,2,'2023/08/23') from Student where Email='s@s.com';
+
+select DATEADD (day,1,Doj) from Student;
+
+select DATEDIFF (month,Doj,Doj) from Student;
+
+select DATEDIFF (YEAR,'2023-05-23','2025-08-27') from Student;
+
+select DATEFROMPARTS (2023 ,08, 23) from Student;
+
+select DATEFROMPARTS (2023,SRn, 21) from Student;
+
+select DATENAME (month, '2023-08-23') from Student;
+
+select DATENAME (day, Doj) from Student;
+
+select DATENAME (weekday, Doj) from Student;
+
+select DATEPART (month,'2023-08-23') from Student;
+
+select DAY (Doj) from Student;
+
+select GETDATE();
+
+select getdate() from Student;
+
+select GETUTCDATE () from Student;
+
+select ISDATE(Doj) from Student;
+select ISDATE (Email) from Student;
+
+select month (Doj) from Student;
+
+select SYSDATETIME () from Student;
+
+select year ('2022-08-23') from Student;
+
+select cast ('string' as varchar);
+
+select cast (44.56 as int);
+
+select coalesce (null,SName, null,Email) from Student;
+
+select convert (decimal,25.609);
+
+select CURRENT_USER;
+
+select iif (SRn>Phoneno,'yes','no') from Student;
+
+select ISNUMERIC (SName) from Student;
+select ISNUMERIC (Subject2) from EducationDetail;
+
+select nullif (Doj,Doj) from Student;
+select nullif (Email,Email) from Student;
+
+select SESSION_USER;
+
+select SESSIONPROPERTY (Doj) from Student;
+
+select SYSTEM_USER;
+
+select USER_NAME();
